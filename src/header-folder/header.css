@@ -6,14 +6,16 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 15px 10px;
+  /* padding: 15px 10px; */
   box-shadow: 0px 2px 28px -10px lightgrey;
+  height: 80px;
 }
 .header-input {
   display: flex;
   align-items: center;
   background: rgb(240, 239, 239);
-  width: 360px;
+  /* width: 360px; */
+  width: 85%;
   border-radius: 4px;
   height: 40px;
 }
@@ -32,6 +34,15 @@ input {
   font-size: 14px;
   font-family: system-ui;
 }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  width: 43%;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+}
+
 .header-profile,
 .header-wishlist,
 .header-bag {
@@ -39,15 +50,33 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  padding: 0px 15px;
+}
+.header-profile:hover {
+  border-bottom: 4px solid pink;
 }
 img {
   height: 60px;
   margin-top: -13px;
 }
-.header-container > p {
+.nav-elements {
+  display: flex;
   font-family: system-ui;
   font-weight: 600;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-right: 25px;
 }
+.nav-elements > div {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .header-profile > span,
 .header-wishlist > span,
 .header-bag > span {
@@ -55,4 +84,14 @@ img {
   font-weight: bold;
   margin-top: 5px;
   font-family: system-ui;
+}
+/* .header-actions {
+  display: flex;
+  align-items: center;
+  width: 43%;
+  height: 100%;
+  padding: 0px 0px 0px 20px;
+} */
+.logo-parent {
+  padding: 0px 20px 0px 50px;
 }
